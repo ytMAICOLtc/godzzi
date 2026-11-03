@@ -1,10 +1,492 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Feliz Cumpleaños</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Sara Sofía ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(180deg,#0b1120,#111827,#1f2937);
+color:white;
+overflow-x:hidden;
+}
+
+/* INTRO */
+
+#intro{
+position:fixed;
+top:0;
+left:0;
+height:100%;
+width:100%;
+background:#020617;
+z-index:9999;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+transition:1s;
+}
+
+#intro h1{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+#intro p{
+max-width:700px;
+font-size:1.2rem;
+color:#cbd5e1;
+margin-bottom:35px;
+}
+
+#openBtn{
+padding:18px 40px;
+border:none;
+border-radius:50px;
+background:#ec4899;
+color:white;
+font-size:1.1rem;
+cursor:pointer;
+box-shadow:0 0 30px rgba(236,72,153,.5);
+transition:0.4s;
+}
+
+#openBtn:hover{
+transform:scale(1.08);
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+}
+
+.hero img{
+width:320px;
+height:320px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid rgba(255,255,255,.2);
+box-shadow:0 0 50px rgba(255,255,255,.25);
+animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+.hero h1{
+margin-top:30px;
+font-size:3rem;
+}
+
+.hero p{
+margin-top:20px;
+font-size:1.25rem;
+max-width:800px;
+color:#cbd5e1;
+}
+
+/* AGE */
+
+.age{
+font-size:4rem;
+font-weight:bold;
+color:#f472b6;
+margin-top:25px;
+}
+
+/* GALLERY */
+
+.gallery-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:50px;
+}
+
+.gallery img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:20px;
+transition:.4s;
+box-shadow:0 10px 25px rgba(0,0,0,.5);
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* LETTER */
+
+.letter{
+max-width:1000px;
+margin:auto;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:30px;
+line-height:2;
+font-size:1.1rem;
+margin-bottom:80px;
+}
+
+.letter h2{
+text-align:center;
+margin-bottom:30px;
+font-size:2rem;
+}
+
+/* FINAL */
+
+.final{
+padding:100px 20px;
+text-align:center;
+}
+
+.final h2{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.final p{
+font-size:1.3rem;
+color:#cbd5e1;
+max-width:900px;
+margin:auto;
+}
+
+/* HEARTS */
+
+.heart{
+position:fixed;
+pointer-events:none;
+animation:fly linear forwards;
+}
+
+@keyframes fly{
+
+0%{
+transform:translateY(100vh);
+opacity:1;
+}
+
+100%{
+transform:translateY(-120px);
+opacity:0;
+}
+
+}
+
+.star{
+position:fixed;
+background:white;
+border-radius:50%;
+opacity:.5;
+animation:twinkle 3s infinite;
+pointer-events:none;
+}
+
+@keyframes twinkle{
+
+50%{
+opacity:1;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero img{
+width:220px;
+height:220px;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.gallery{
+padding:20px;
+}
+
+.letter{
+padding:25px;
+}
+
+}
+
+</style>
 </head>
-<body style="background:pink;text-align:center;font-family:Arial;">
-    <h1>🎂 Feliz Cumpleaños Hermanita ❤️</h1>
-    <p>Esta página fue hecha con mucho cariño.</p>
+<body>
+
+
+<div id="intro">
+
+<h1>✨ Para Sara Sofía ✨</h1>
+
+<p>
+
+Hay recuerdos que nunca se olvidan.
+Y algunas personas hacen que esos recuerdos valgan todavía más.
+
+</p>
+
+<button id="openBtn">
+💖 Abrir Sorpresa
+</button>
+
+</div>
+
+
+<audio id="music" loop>
+<source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+
+<section class="hero">
+
+<img src="foto2.jpeg">
+
+<h1>
+Feliz Cumpleaños
+<br>
+Sara Sofía Arcila Garzón ❤️
+</h1>
+
+<div class="age">14</div>
+
+<p>
+
+Desde pequeños compartiendo momentos,
+risas, peleas, aventuras y recuerdos que jamás voy a olvidar.
+
+Gracias por crecer a mi lado ❤️
+
+</p>
+
+</section>
+
+
+<h2 class="gallery-title">
+📸 Algunos de nuestros recuerdos favoritos
+</h2>
+
+<section class="gallery">
+
+<img src="foto1.jpeg">
+
+<img src="foto2.jpeg">
+
+<img src="foto3.jpeg">
+
+<img src="foto4.jpeg">
+
+</section>
+
+
+<div class="letter">
+
+<h2>
+💌 Una carta para ti
+</h2>
+
+<p>
+
+Querida hermana:
+
+<br><br>
+
+Hoy cumples 14 años y, la verdad, se me hace raro escribir esto porque parece que fue ayer cuando todavía te escondías detrás de mí. De un momento a otro ya estás creciendo y, aunque me alegra verte convertirte en quien eres, también me da un poco de nostalgia.
+
+<br><br>
+
+Quiero que sepas algo que a veces no te digo en voz alta: eres de las mejores cosas que me han pasado. No porque seas perfecta (nadie lo es), sino porque tienes esa forma tuya de mirar el mundo, de reírte de las cosas más tontas y de cuidar a la gente que quieres sin pensarlo dos veces.
+
+<br><br>
+
+Y es que, por más que pelemos o nos molestemos, al final del día siempre termino pensando lo mismo: qué suerte tengo de tenerte como hermana.
+
+<br><br>
+
+Me da orgullo verte. De verdad. Ver cómo vas encontrando tu propio camino, cómo te defiendes y cómo, aun cuando las cosas se ponen difíciles, sigues adelante.
+
+<br><br>
+
+Yo no siempre voy a tener las respuestas, ni voy a ser el hermano ideal, pero sí te puedo prometer algo: voy a estar.
+
+<br><br>
+
+Para escucharte.
+
+Para respaldarte.
+
+Para recordarte las veces que haga falta que vales muchísimo más de lo que a veces crees.
+
+<br><br>
+
+Que este año te traiga cosas buenas.
+
+Que te sientas querida.
+
+Que te atrevas a soñar en grande.
+
+Y que sepas, incluso en los días más grises, que aquí tienes a alguien que te quiere sin condiciones ni fecha de vencimiento.
+
+<br><br>
+
+❤️ Feliz cumpleaños, godzzi ❤️
+
+<br><br>
+
+Gracias por crecer a mi lado.
+
+<br><br>
+
+Te quiero un montón.
+
+<br><br>
+
+<b>Maicol.</b>
+
+</p>
+
+</div>
+
+
+<section class="final">
+
+<h2>
+🌟 Nunca olvides quién eres 🌟
+</h2>
+
+<p>
+
+Eres valiosa.
+
+<br><br>
+
+Eres fuerte.
+
+<br><br>
+
+Eres especial.
+
+<br><br>
+
+Y siempre tendrás un hermano que estará orgulloso de ti.
+
+<br><br>
+
+❤️ Feliz cumpleaños Sara Sofía ❤️
+
+</p>
+
+</section>
+
+
+<script>
+
+const music = document.getElementById("music");
+
+document.getElementById("openBtn")
+.addEventListener("click",()=>{
+
+music.play();
+
+const intro=document.getElementById("intro");
+
+intro.style.opacity="0";
+
+setTimeout(()=>{
+
+intro.style.display="none";
+
+},1000);
+
+});
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=
+(20+Math.random()*25)+"px";
+
+heart.style.animationDuration=
+(6+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),10000);
+
+}
+
+setInterval(createHeart,400);
+
+
+for(let i=0;i<80;i++){
+
+const star=document.createElement("div");
+
+star.className="star";
+
+star.style.width="3px";
+star.style.height="3px";
+
+star.style.left=Math.random()*100+"vw";
+star.style.top=Math.random()*100+"vh";
+
+star.style.animationDuration=
+(2+Math.random()*4)+"s";
+
+document.body.appendChild(star);
+
+}
+
+</script>
+
 </body>
 </html>
